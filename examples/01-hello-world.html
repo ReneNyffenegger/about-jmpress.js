@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>jmpress.js - Hello World</title>
+
+  <style>
+
+    .stage {
+
+        background-color: #eee;
+        border: 2px #ddd solid;
+
+        font-size: 100px;
+        text-align: center;
+        line-height: 618px;
+        vertical-align: middle;
+
+        width: 1000px;
+        height: 618px;
+
+       -webkit-box-sizing: border-box;
+       -moz-box-sizing:    border-box;
+       -ms-box-sizing:     border-box;
+       -o-box-sizing:      border-box;
+        box-sizing:        border-box;
+     
+ 
+     }
+
+    .step {
+       -webkit-transition: opacity 0.8s;
+       -moz-transition:    opacity 0.8s;
+       -ms-transition:     opacity 0.8s;
+       -o-transition:      opacity 0.8s;
+        transition:        opacity 0.8s;
+
+     }
+    .step:not(.active) {
+    	opacity: 0.3;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=yes" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <script type="text/javascript" src="../js/jquery-1.7.1.js"></script>
+  <script type="text/javascript" src="../js/jmpress.js"></script>
+
+</head>
+<body>
+
+<div id="simple">
+
+       <div class="step" data-x="0" data-y="0">
+         <div class='stage'>Hello ...</div>
+      </div>
+
+       <div class="step" data-x="1200" data-y="0">
+         <div class='stage'>... world!</div>
+      </div>
+
+</div>
+
+<script type="text/javascript">
+
+  $(function() {
+    $('#simple').jmpress();
+  });
+
+</script>
+
+</body>
+</html>
